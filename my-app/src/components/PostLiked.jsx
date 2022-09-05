@@ -1,6 +1,8 @@
+import { FaHeart } from "react-icons/fa";
 const PostLiked = () => {
     return(
-        <div>You Have liked this post!
+        <div>You have liked this post 
+            <br></br><FaHeart className="heart"/>
         </div>
     )  
 }

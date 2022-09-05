@@ -1,4 +1,5 @@
 import PostLiked from "./PostLiked"
+import { FaHeart } from "react-icons/fa";
 const ReactPost = (props) => {
 
 
@@ -7,7 +8,7 @@ const ReactPost = (props) => {
           <h3>Fråga: {props.question}</h3>
          
           <p>Svar: {props.answer}</p>
-            {props.liked ? <PostLiked /> : <button onClick={() => {props.likePost(props.id)}}>Like Post</button>  }
+            {props.liked ? <PostLiked /> : <button onClick={() => {props.likePost(props.id)}}>Like Post<br></br><FaHeart className="heart"/></button>  }
       </div>
     )
   }
