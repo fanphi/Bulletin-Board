@@ -6,9 +6,10 @@ function App() {
   return (
     <div className="App">
     <header><h1>React Bulletin Board</h1></header>
-      <BulletinBoard/>
+ 
+      <BulletinBoard />
 
-   
+    
     </div>
   );
 }

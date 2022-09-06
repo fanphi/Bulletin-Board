@@ -5,7 +5,7 @@ const BulletinBoard = () => {
 
     let boardPosts = [
         {question: "Vad är tre fördelar med att använda React?",
-        answer: "Lorem ipsum",
+        answer: "React är lätt att använda och att lära sig. Med React kan du enkelt skapa olika komponenter som går att återanvända. React har även ett starkt community som är hjälpsamma.",
         liked: false,
         id: 1},
         {question: "Vad betyder Single Page Application och vad skiljer det från en “vanlig” webbplats?",
@@ -29,11 +29,11 @@ const BulletinBoard = () => {
         console.log("test");
       }
     return (
-      <div>
+      <main>
         
         {posts.map((post, i) => <ReactPost question={post.question} answer={post.answer} liked={post.liked} likePost={likePost} id={i}/>)}
           
-      </div>
+      </main>
     )
     }
 

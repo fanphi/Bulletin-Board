@@ -5,10 +5,12 @@ const ReactPost = (props) => {
 
     return (
       <div className="post">
-          <h3>Fråga: {props.question}</h3>
+          <h3>{props.question}</h3>
          
-          <p>Svar: {props.answer}</p>
-            {props.liked ? <PostLiked /> : <button onClick={() => {props.likePost(props.id)}}>Like Post<br></br><FaHeart className="heart"/></button>  }
+          <p>{props.answer}</p>
+            {/* {props.liked ? <PostLiked /> : <button onClick={() => {props.likePost(props.id)}}>Like Post<br></br><FaHeart className="heart"/></button>  } */}
+            {!props.liked && <button onClick={() => {props.likePost(props.id)}}>Like <FaHeart className="heart"/></button>}
+            {props.liked && <PostLiked />}
       </div>
     )
   }

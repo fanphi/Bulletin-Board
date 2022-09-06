@@ -6,16 +6,34 @@
   justify-content: center;
 
 } 
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
 
 .heart{
   color: red;
 }
 .post{
 border: 1px solid black;
-width: 30%;
+width: 35%;
 border-radius: 5px;
 padding: 2%;
 margin: 2%;
 
 }
 
+button{
+  background-color: lightpink;
+  border: none;
+  border-radius: 10%;
+  padding: 2% 3%;
+
+}
+
+button:hover{
+  background-color: rgb(239, 146, 160);
+}
