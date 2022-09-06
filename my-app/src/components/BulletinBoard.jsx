@@ -26,7 +26,7 @@ const BulletinBoard = () => {
         allPosts[id].liked = true;
         
         setPosts([...allPosts])
-        console.log("test");
+        
       }
     return (
       <main>
